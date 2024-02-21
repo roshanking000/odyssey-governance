@@ -20,25 +20,13 @@ type ParseDataContentProps = {
 
 export const parseDataContent = (data: Array<ParseDataContentProps>) => {
   for (let i = 0; i < data.length; i++) {
-    const content = parse(data[i].content) as any;
-    const dataContent = [];
-
-    if (typeof content === 'object') {
-      if (typeof content.props.children === 'string') {
-        dataContent.push({
-          type: 'p',
-          content: content.props.children,
-        });
-      } else {
-        dataContent.push({
-          type: content.props.children.type,
-          className: content.props.children.props.className,
-          content: content.props.children.props.children,
-        });
-      }
-      data[i].content = dataContent[0].content;
-    } else if (typeof content === 'string') {
-    }
+    const content = parse(`<div>${data[i].content}</div>`) as any;
+    data[i].content = content;
   }
   return data;
+};
+
+export const parseContent = (content: string) => {
+  const parsed_content = parse(`<div>${content}</div>`);
+  return parsed_content;
 };

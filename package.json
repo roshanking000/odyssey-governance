@@ -26,6 +26,7 @@
     "ethers": "5.7.1",
     "ethers6": "npm:ethers@6.7.1",
     "html-react-parser": "^5.1.7",
+    "html-to-text": "^9.0.5",
     "next": "14.0.4",
     "next-redux-wrapper": "8.0.0",
     "numeral": "2.0.6",

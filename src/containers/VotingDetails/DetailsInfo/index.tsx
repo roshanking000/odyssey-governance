@@ -1,9 +1,9 @@
-import Markdown from 'react-markdown';
 import {
   Typography,
 } from 'components';
 import { getLabelsForStatus } from 'utils';
 import { ProposalStatus } from 'types';
+import { parseContent } from 'utils/parseContent';
 import styles from './styles.module.scss';
 
 type DetailsInfoProps = {
@@ -29,9 +29,7 @@ export const DetailsInfo = ({
         {title}
       </Typography>
       <Typography type="p" className={styles.voting_details_description}>
-        <Markdown>
-          {description}
-        </Markdown>
+        {parseContent(description)}
       </Typography>
     </div>
   </>
