@@ -1,0 +1,34 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/_mixins.scss';
+
+.table {
+  width: 100%;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  thead {
+    padding: 16px 24px;
+
+    th {
+      color: $color-white;
+    }
+  }
+
+  tbody {
+    td {
+      color: $color-primary;
+
+      &:nth-child(2) {
+        color: $color-white;
+      }
+    }
+  }
+
+  tr {
+    text-align: left;
+  }
+}

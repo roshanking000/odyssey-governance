@@ -1,0 +1,83 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/_mixins.scss';
+
+.navigationMenu__container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 50px;
+
+	&:hover {
+		.navigationMenu__list {
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+		}
+	}
+}
+
+.navigationMenu__item {
+	display: flex;
+	align-items: center;
+	color: $color-text;
+	background-color: transparent;
+	border: none;
+  padding: 0;
+  outline: none;
+	cursor: pointer;
+
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	font-family: $plusJakartaSans;
+
+	&:hover {
+		color: $color-primary;
+	}
+
+	&.active {
+		color: $color-white;
+	}
+}
+
+.navigationMenu__item_icon {
+	min-width: 20px;
+	transition: transform .3s;
+}
+
+.navigationMenu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 20px;
+	border: 1px solid rgb(76, 76, 76);
+
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(.90);
+	transition: opacity .1s, transform .1s;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: $color-grey-900;
+	padding: 20px;
+}
+
+.navigationMenu__list_item {
+	color: $color-text;
+	white-space: nowrap;
+
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	font-family: $plusJakartaSans;
+
+	&:hover {
+		color: $color-primary;
+	}
+
+	&.active {
+		color: $color-white;
+	}
+}

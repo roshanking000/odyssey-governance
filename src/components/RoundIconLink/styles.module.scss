@@ -1,0 +1,44 @@
+@import 'assets/styles/fonts.css';
+@import 'assets/styles/variables.scss';
+
+.roundIconLink_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $plusJakartaSans;
+  color: $color-white;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+
+  background: $color-white-alpha-50;
+  border-radius: 63px;
+  border: 1px solid;
+  border-image-source: linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+
+  margin-left: 1.5rem;
+
+  cursor: pointer;
+  
+  &:hover {
+    background: $color-white-alpha-200;
+  }
+}
+
+.roundIconLink_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(32,29,50);
+  padding: 10px;
+  border: 1px solid;
+  border-image-source: linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  margin-right: 4px;
+}
+
+.roundIconLink_text {
+  padding: 13px 10px 13px 20px;
+}

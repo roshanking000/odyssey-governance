@@ -1,0 +1,35 @@
+@import "assets/styles/variables.scss";
+
+.filters__container {
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border-radius: 63px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+  linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  gap: 8px;
+}
+
+.filter {
+  border-radius: 20px;  
+  padding: 4px 8px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+
+  font-size: 14px;
+  font-family: $plusJakartaSans;
+  line-height: 20px;
+  font-weight: 500;
+
+  &.active {
+    color: $color-white;
+    background:  linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  }
+}
+
+

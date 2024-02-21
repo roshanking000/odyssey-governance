@@ -1,0 +1,11 @@
+@import 'assets/styles/variables.scss';
+
+.timePicker {
+  display: flex;
+  align-items: center;
+  max-width: 368px;
+}
+
+.error input {
+  border: 1px solid $color-red;
+}

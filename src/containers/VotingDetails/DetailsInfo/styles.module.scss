@@ -1,0 +1,45 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.voting_details__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 64px;
+  margin-top: 123px;
+  padding-bottom: 11px;
+  gap: 32px;
+
+  @include desktop {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+.details_info_labels {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.details_info_info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .voting_details_title {
+    font-size: 28px;
+    font-style: normal; 
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .voting_details_description {
+    color: #FFFFFF99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}

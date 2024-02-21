@@ -1,0 +1,53 @@
+// Media request mixins MobileFirst
+@mixin small_s_mobile {
+	@media screen and (max-width: 375px) {
+		@content;
+	}
+}
+@mixin small_mobile {
+	@media screen and (max-width: 414px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin small_desktop {
+	@media screen and (max-width: 912px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin desktop1280 {
+	@media screen and (max-width: 1281px) {
+		@content;
+	}
+}
+
+@mixin desktop_lg {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin desktop_xl {
+	@media screen and (max-width: 1400px) {
+		@content;
+	}
+}

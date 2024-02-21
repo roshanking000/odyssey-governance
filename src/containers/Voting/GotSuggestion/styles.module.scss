@@ -1,0 +1,80 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.gotSuggestion__container {
+  position: relative;
+  width: 100%;
+}
+
+.gotSuggestion__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1088px;
+  margin: 0 auto;
+  padding: 40px 64px;
+
+  @include mobile {
+		padding: 40px 20px;
+	}
+
+  gap: 24px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  border: 1px solid;
+  border-image-source: linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  font-family: $plusJakartaSans;
+}
+
+.gotSuggestion__title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  font-family: $plusJakartaSans;
+}
+
+.gotSuggestion__description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: $plusJakartaSans;
+  text-align: center;
+}
+
+.round {
+  width: fit-content;
+
+  .round_icon {
+    transform: rotate(-90deg);
+  }
+}
+
+.ellipse3 {
+  position: absolute;
+  top: -60%;
+  left: - $offset;
+
+  @include desktop1280 {
+		left: -16px;
+	}
+
+  @include mobile {
+		display: none;
+	}
+}
+
+.ellipse4 {
+  position: absolute;
+  top: -60%;
+  right: - $offset;
+
+  @include desktop1280 {
+		right: -16px;
+	}
+  @include mobile {
+		display: none;
+	}
+}

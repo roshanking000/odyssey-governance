@@ -1,0 +1,107 @@
+@import 'assets/styles/fonts.css';
+@import 'assets/styles/variables.scss';
+
+.h1 {
+  font: {
+    family: $plusJakartaSans;
+    size: 80px;
+    weight: bold;
+  }
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+  color: $color-white;
+}
+
+.h2 {
+  font: {
+    family: $plusJakartaSans;
+    size: 24px;
+    weight: bold;
+  }
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  color: $color-white;
+}
+
+.h3 {
+  font: {
+    family: $plusJakartaSans;
+    size: 16px;
+    weight: 500;
+  }
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  color: $color-white;
+}
+
+.h4 {
+  font: {
+    family: $plusJakartaSans;
+    size: 14px;
+    weight: 500;
+  }
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: $color-white;
+}
+
+.p {
+  font: {
+    family: $plusJakartaSans;
+    size: 14px;
+    weight: 500;
+  }
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  color: $color-text;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bold {
+  font: {
+    family: $plusJakartaSans;
+    weight: bold;
+  }
+}
+
+.label {
+  font: {
+    family: $plusJakartaSans;
+    size: 12px;
+    weight: bold;
+  }
+  line-height: 16px;
+  color: $color-text;
+}
+
+.span {
+  font: {
+    family: $plusJakartaSans;
+    size: 1em;
+  }
+  color: inherit;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.full {
+  text-align: justify;
+}

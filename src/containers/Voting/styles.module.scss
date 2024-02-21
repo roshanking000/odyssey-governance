@@ -1,0 +1,49 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.voting__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto 0;
+  width: calc(100% - ($offset * 2));
+
+	@include desktop1280 {
+		width: calc(100% - (16px * 2));
+	}
+}
+
+.voting__title {
+  font-family: $plusJakartaSans;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.voting__description {
+  font-family: $plusJakartaSans;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.round {
+  margin-bottom: 80px;
+
+  .round_icon {
+    transform: rotate(-90deg);
+  }
+}
+
+.ellipse2 {
+  position: absolute;
+  top: -210px;
+  right: 0;
+  z-index: -100;
+}

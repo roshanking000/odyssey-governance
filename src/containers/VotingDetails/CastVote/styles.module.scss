@@ -1,0 +1,42 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.cast_vote__container{
+  margin-top: 45px;
+}
+
+.cast_vote__content {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cast_vote_checkbox__container {
+  height: 48px;
+  padding: 12px 24px;
+}
+
+.cast_vote_button__container {
+  padding: 0 24px;
+}
+
+.groupButtons {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.answer {
+  .label {
+
+  }
+  .value {
+    color: $color-primary;
+    font-family: $plusJakartaSans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; 
+
+    margin-bottom: 16px;
+  }
+}

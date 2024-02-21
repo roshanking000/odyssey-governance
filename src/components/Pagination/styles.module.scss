@@ -1,0 +1,141 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/_mixins.scss';
+
+.pagination_container {
+  display: block;
+  margin: auto;
+  max-width: max-content;
+  gap: 16px;
+}
+
+.pagination {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  height: 36px;
+  padding: 4px;
+  background-color: $color-pagination-back;
+  margin: 0;
+  border-radius: 30px;
+}
+
+
+.page {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+  margin: 0 2px;
+  font-style: $plusJakartaSans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-text;
+  transition: 0.2s;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.arrow_button {
+  display: flex;
+  background-color: $color-pagination-back;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: $color-white;
+  justify-content: center;
+  text-align: center;
+}
+
+.page, .arrow_button {
+  &:hover {
+    background-color: $color-pagination-back;
+    color: white;
+  }
+}
+
+.break {
+  &_line {
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    color: $color-white;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-width: 0 0 6px 6px;
+      border-color: transparent transparent $color-white transparent;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.page_active {
+  background-color: $color-pagination-back;
+  border-radius: 12px;
+  color: $color-white;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.next_arrow {
+  position: absolute;
+  top: 0;
+  left:  calc(100% + 4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev_arrow {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 4px);
+  transform: rotate(-180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.move_to {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba($color-white, .85);
+  font-size: 12px;
+  margin-left: 24px;
+}
+
+.move_to_input {
+  background-color: $color-pagination-back;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 7px 8px;
+  color: $color-white;
+  width: 48px;
+
+  &:focus{
+    outline: none;
+  }
+}

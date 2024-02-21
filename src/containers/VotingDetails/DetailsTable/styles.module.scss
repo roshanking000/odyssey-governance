@@ -1,0 +1,23 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.details_table_container {
+  padding: 0 !important;
+  td {
+    padding: 16px 24px;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.details__content {
+  padding-bottom: 16px !important;
+}
+
+
+.name_detail {
+  color: $color-text
+}

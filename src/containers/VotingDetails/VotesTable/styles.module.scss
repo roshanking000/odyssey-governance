@@ -1,0 +1,34 @@
+@import "assets/styles/variables.scss";
+@import 'assets/styles/_mixins.scss';
+
+.votes_table_container {
+  padding: 0 !important;
+
+  tr {
+    display: flex;
+    padding-bottom: 24px;
+    width: 100%;
+  }
+
+  td {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 24px;
+  }
+
+  td:first-child {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  td:last-child {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.votes__content {
+  padding-bottom: 0px !important;
+}

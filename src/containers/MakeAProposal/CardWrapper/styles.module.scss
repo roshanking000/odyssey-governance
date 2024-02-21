@@ -1,0 +1,23 @@
+@import "assets/styles/variables.scss";
+
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid;
+  border-image-source: linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+  box-shadow: 0px 0px 214px 0px #0000000F inset;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+}
+
+.title {
+  color: $color-white;
+  font-family: $plusJakartaSans;
+  border-bottom: 1px solid rgba($color-white, .05);
+  padding: 16px 24px;
+}
+
+.content {
+  padding: 16px 24px 32px;
+}

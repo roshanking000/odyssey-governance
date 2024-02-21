@@ -1,0 +1,93 @@
+$color-input-hover-blue: #83a1f4;
+$color-input-focus-blue: #8589f3;
+$color-blue-button: #6888e1;
+$color-click-button: #3e5db5;
+
+$color-heads: #001b48;
+$color-text: #FFFFFF66;
+$color-placeholder: #6b7194;
+$color-tab-line: #6888e1;
+$color-button-border: #cdd2dd;
+$color-text-disabled: #758295;
+$color-background-disabled: #e7ebf1;
+$color-button-disabled: #d6ddee;
+$color-button-completed: #3ac922;
+$color-button-warning: #ffc0c0;
+$color-text-error: #ff3030;
+$color-notice-warning: #ff3030;
+$maxContentWidth: calc(1440px - (80px * 2));
+$maxContentWidth2: calc(100% - (12px * 2));
+$maxContentWidth3: calc(100% - (20px * 2));
+
+$plusJakartaSans: 'Plus Jakarta Sans';
+
+$dark-theme: #050310;
+$color-white: #ffffff;
+$color-light-green: #86EC56;
+$color-orange: #F9AA4B;
+$color-red: #F54B4B;
+$color-primary: #8C79FF;
+$color-primary-button: 
+    linear-gradient(119.45deg, #8239FF 8.65%, #E18DFF 41.44%, #FF94D4 68.05%), 
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+$color-primary-button__hover: 
+    linear-gradient(119.45deg, #9050ff 8.65%, #bb5ddd 41.44%, #f48bca 68.05%), 
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+$color-primary-button__click: 
+    linear-gradient(119.45deg, #7628fd 8.65%, #d86dff 41.44%, #fd88ce 68.05%), 
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+$color-gray-button: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+$color-gray-button__hover: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.10)),
+    linear-gradient(119.45deg, rgba(132, 131, 131, 0.1) 8.65%, rgba(255, 255, 255, 0.05) 68.05%);
+$color-gray-button__click: 
+    linear-gradient(0deg, rgba(252, 252, 252, 0.1), rgba(187, 187, 187, 0.1)),
+    linear-gradient(20deg, rgba(78, 78, 78, 0.1) 8.65%, rgba(0, 0, 0, 0.3));
+
+$color-gray-text: #FFFFFF66;    
+$color-primary-text: $color-white;
+
+$color-primary-progress-bar: linear-gradient(119.45deg, #8239FF 8.65%, #E18DFF 41.44%, #FF94D4 68.05%);
+$color-primary-progress-bar-back: linear-gradient(119.45deg, rgba(130, 57, 255, 0.1) 8.65%, rgba(225, 141, 255, 0.1) 41.44%, rgba(255, 148, 212, 0.1) 68.05%);
+
+$color-text-for-green: #050310;
+$color-text-for-orange: #040617;
+$color-light-gray: #FFFFFF1A; 
+$color-grey: #333333;
+$color-grey2: #3e3e3e;
+$color-text: #FFFFFF66;
+
+$color-card-background-imperceptible: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.03) 100%);
+$color-card-background-obscure: linear-gradient(#FFFFFF0D, rgba(255, 255, 255, 0.05));
+
+$color-card-border: #FFFFFF0D; 
+$color-pagination-back: #FFFFFF0D;
+$color-modal-background: #030510;
+$color-modal-border: #FFFFFF0D; 
+$color-header-searcher-background: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), 
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);
+
+$color-textarea-back:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    linear-gradient(119.45deg, rgba(255, 255, 255, 0.05) 8.65%, rgba(255, 255, 255, 0) 68.05%);$color-table-back: #FFFFFF0D;
+
+
+$color-button-icon: #3b3b3b;
+$color-button-icon__click: #70707066;
+$color-button-icon__hover: #333333;;
+$color-pagination-back: #FFFFFF0D;
+
+
+$color-hover-background: rgba(255, 255, 255, 0.05);
+
+$color-white-alpha-50: rgba(255, 255, 255, 0.04);
+$color-white-alpha-200: rgba(255, 255, 255, 0.08);
+
+$color-grey-700: #2D3748;
+$color-grey-900: #171923;
+
+$scrollbarWidth: 6px;
+$offset: 4rem;

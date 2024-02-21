@@ -1,0 +1,114 @@
+@import 'assets/styles/variables.scss';
+
+.container {
+	width: max-content;
+	display: flex;
+	justify-content: center;
+
+	* {
+		margin-right: 8px;
+	}
+}
+
+.checkContainer {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkContainer .input_checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: -2px;
+	left: 0;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 2px solid #FFFFFF33;
+	color: black;
+	border-radius: 8px;
+}
+
+.checkContainer:hover .input_checkbox~.checkmark {
+	background-color: rgba(44, 135, 255, 0.689);
+	border: 2px solid #FFFFFF33
+}
+
+.checkContainer .input_checkbox:checked~.checkmark {
+	background-color: $color-white;
+	border: 2px solid  $color-white;
+}
+
+.description_checked {
+	color: white !important;
+}
+
+.input_checkbox_disable:disabled~.checkmark {
+	background-color: rgb(154, 26, 26);
+	border: 2px solid #FFFFFF33
+}
+
+.checkContainer:hover .input_checkbox_disabled~.checkmark {
+	background-color: rgb(154, 26, 26);;
+	border: 2px solid #FFFFFF33
+}
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+	top: 3px;
+}
+
+.checkContainer .input_checkbox:checked~.checkmark:after {
+	display: block;
+}
+
+.checkContainer .checkmark:after {
+	width: 5px;
+	height: 10px;
+	border: 1px solid black;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.checkContainer .input_checkbox:disabled~.checkmark {
+	cursor: not-allowed;
+	opacity: 0.9;
+}
+
+.description {
+	color: $color-gray-text;
+	font-family: $plusJakartaSans;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+
+}
+
+.description_disabled {
+	opacity: 0.5;
+}
